@@ -245,3 +245,9 @@ SELECT * FROM libros;
 
 USE biblioteca;
 SELECT * FROM autores;
+
+USE biblioteca; 
+SELECT l.Titulo, l.Año_Publicacion, l.Disponible
+FROM libros l
+JOIN autores a ON l.ID_Autor = a.ID_Autor
+WHERE a.Nombre = 'GABRIEL GARCIA MARQUEZ';
