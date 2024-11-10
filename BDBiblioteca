@@ -273,3 +273,8 @@ use biblioteca;
 UPDATE prestamos
 SET Fecha_Devolucion = '2024-08-10'
 WHERE ID_Prestamo = 2;
+
+----Elimar un libro de la base de datos eliminé el No. 2
+USE biblioteca;
+DELETE FROM libros
+WHERE ID_Libros = 2;
