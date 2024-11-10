@@ -108,6 +108,10 @@ use  empresa;
 DELETE FROM empleados
 WHERE Nombre = 'Luis Castro';
 
+use empresa;
+SELECT * FROM Empleados 
+WHERE Cargo = 'Desarrollador';
+
 
 
 
