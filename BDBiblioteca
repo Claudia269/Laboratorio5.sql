@@ -240,14 +240,24 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
+---Seleciona todos los libros
 USE biblioteca;
 SELECT * FROM libros;
 
+---Selecciona todos los autores
 USE biblioteca;
 SELECT * FROM autores;
 
+--Seleciona el libro que escribio Gabriel Garcia Marquez
 USE biblioteca; 
 SELECT l.Titulo, l.Año_Publicacion, l.Disponible
 FROM libros l
 JOIN autores a ON l.ID_Autor = a.ID_Autor
 WHERE a.Nombre = 'GABRIEL GARCIA MARQUEZ';
+
+---Consulta de libros devueltos en el mes 8  de 2024
+Use biblioteca
+SELECT *
+FROM prestamo
+WHERE MONTH(Fecha_Devolucion) = 8
+AND YEAR(Fecha_Devolucion) = 2024;
