@@ -70,14 +70,14 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-/* INSERTAR REGISTROS EN LA TABLA EMPLEADOS*/;
+
 use empresa;
 INSERT INTO `empleados` (Nombre, Cargo, Salario) VALUES
 ('Juan Perez', 'Gerente', 7500000),
 ('Ana Gomez', 'Desarrollador', 6000000),
 ('Luis Castro', 'Proyectos', 10000000);
 
-/* INSERTAR REGISTROS EN LA TABLA CARGO*/;
+
 use empresa;
 INSERT INTO cargo (Nombre_Cargo, Descripcion, Salario) VALUES
 ('Gerente', 'Es el encargado de llevar las riendas de la empresa', 500000),
@@ -85,24 +85,28 @@ INSERT INTO cargo (Nombre_Cargo, Descripcion, Salario) VALUES
 ('Desarrollador', 'Es el encargado de programar en el area de sistemas', 400000),
 ('Proyectos', 'Es el encargado de supervizar los proyectos que se llevan a cabo en la empresa', 5000000);
 
-/*REALIZAR LA CONSULTA DE LOS DATOS DE EMPLEADOS*/;
+
 use empresa;
 SELECT * FROM empleados;
 
-/* REALIZAR LA CONSULTA DE TODOS LOS CARGOS*/;
+
 use empresa;
 SELECT * FROM cargo;
 
-/* SELECIONAR EMPLEADOS QUE GANAN MAS DE 7.000.000*/;
+
 use empresa;
 SELECT * FROM Empleados
 WHERE Salario > 7000000;
 
-/*ACTUALIZAR EL SALARIO DE ANA GOMEZ */
+
 use empresa;
 UPDATE empleados 
 SET salario = 6500000
 WHERE Nombre = 'Ana Gomez';
+
+use  empresa;
+DELETE FROM empleados
+WHERE Nombre = 'Luis Castro';
 
 
 
