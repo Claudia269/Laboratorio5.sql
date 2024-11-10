@@ -98,6 +98,14 @@ use empresa;
 SELECT * FROM Empleados
 WHERE Salario > 7000000;
 
+/*ACTUALIZAR EL SALARIO DE ANA GOMEZ */
+use empresa;
+UPDATE empleados 
+SET salario = 6500000
+WHERE Nombre = 'Ana Gomez';
+
+
+
 
 
 
