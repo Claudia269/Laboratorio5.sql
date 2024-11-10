@@ -242,3 +242,6 @@ COMMIT;
 
 USE biblioteca;
 SELECT * FROM libros;
+
+USE biblioteca;
+SELECT * FROM autores;
