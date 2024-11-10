@@ -89,4 +89,10 @@ INSERT INTO cargo (Nombre_Cargo, Descripcion, Salario) VALUES
 use empresa;
 SELECT * FROM empleados;
 
+/* REALIZAR LA CONSULTA DE TODOS LOS CARGOS*/;
+use empresa;
+SELECT * FROM cargo;
+
+
+
 
