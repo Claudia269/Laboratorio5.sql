@@ -112,6 +112,9 @@ use empresa;
 SELECT * FROM Empleados 
 WHERE Cargo = 'Desarrollador';
 
+USE empresa;
+INSERT INTO empleados (ID_Cargo, Nombre, Cargo, Salario)
+VALUES (2, 'Marta López', 'Asistente', 3000000);
 
 
 
