@@ -84,3 +84,9 @@ INSERT INTO cargo (Nombre_Cargo, Descripcion, Salario) VALUES
 ('Asistente', 'Es el apoyo del gerente ', 250000),
 ('Desarrollador', 'Es el encargado de programar en el area de sistemas', 400000),
 ('Proyectos', 'Es el encargado de supervizar los proyectos que se llevan a cabo en la empresa', 5000000);
+
+/*REALIZAR LA CONSULTA DE LOS DATOS DE EMPLEADOS*/;
+use empresa;
+SELECT * FROM empleados;
+
+
