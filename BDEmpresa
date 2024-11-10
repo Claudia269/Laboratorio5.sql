@@ -1,0 +1,70 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generaciÃ³n: 10-11-2024 a las 21:54:42
+-- VersiÃ³n del servidor: 10.4.32-MariaDB
+-- VersiÃ³n de PHP: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `empresa`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `Empleados`
+--
+
+CREATE TABLE `empleados` (
+  `ID_Empleado` int(11) NOT NULL,
+  `ID_Cargo` int(11) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `Cargo` varchar(30) NOT NULL,
+  `Salario` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `Empleados`
+--
+
+INSERT INTO `Empleados` (`ID_Empleado`, `ID_Cargo`, `Nombre`, `Cargo`, `Salario`) VALUES
+(1, 1, 'Juan Perez', 'Gerente', 7500000),
+(2, 3, 'Ana Gomez', 'Desarrollador', 6500000),
+(5, 2, 'Marta LÃ³pez', 'Asistente', 3000000);
+
+--
+-- Ãndices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `Empleados`
+--
+ALTER TABLE `Empleados`
+  ADD PRIMARY KEY (`ID_Empleado`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `Empleados`
+--
+ALTER TABLE `Empleados`
+  MODIFY `ID_Empleado` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
