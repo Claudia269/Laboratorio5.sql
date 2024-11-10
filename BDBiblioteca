@@ -261,3 +261,9 @@ SELECT *
 FROM prestamo
 WHERE MONTH(Fecha_Devolucion) = 8
 AND YEAR(Fecha_Devolucion) = 2024;
+
+-- Actuaizar el campo disponible cuando se presta un libro por No
+USE biblioteca;
+UPDATE libros
+SET disponible = 'no'
+WHERE ID_Libros = 1;
