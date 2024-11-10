@@ -267,3 +267,9 @@ USE biblioteca;
 UPDATE libros
 SET disponible = 'no'
 WHERE ID_Libros = 1;
+
+----Actualizar fecha_devolucion de un prestamo
+use biblioteca;
+UPDATE prestamos
+SET Fecha_Devolucion = '2024-08-10'
+WHERE ID_Prestamo = 2;
